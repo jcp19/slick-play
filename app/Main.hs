@@ -1,8 +1,8 @@
-{-# LANGUAGE NamedFieldPuns        #-}
-{-# LANGUAGE DeriveGeneric         #-}
 {-# LANGUAGE DeriveAnyClass        #-}
-{-# LANGUAGE OverloadedStrings     #-}
+{-# LANGUAGE DeriveGeneric         #-}
 {-# LANGUAGE DuplicateRecordFields #-}
+{-# LANGUAGE NamedFieldPuns        #-}
+{-# LANGUAGE OverloadedStrings     #-}
 
 module Main where
 
@@ -13,23 +13,23 @@ import           Data.Aeson.Lens
 import           Data.Time
 import           Development.Shake
 import           Development.Shake.Classes
-import           Development.Shake.Forward
 import           Development.Shake.FilePath
+import           Development.Shake.Forward
 import           GHC.Generics               (Generic)
 import           Slick
 
-import qualified Data.HashMap.Lazy as HML
+import qualified Data.HashMap.Lazy          as HML
 import qualified Data.Text                  as T
 
 ---Config-----------------------------------------------------------------------
 
 siteMeta :: SiteMeta
 siteMeta =
-    SiteMeta { siteAuthor = "Me"
-             , baseUrl = "https://example.com"
-             , siteTitle = "My Slick Site"
-             , twitterHandle = Just "myslickhandle"
-             , githubUser = Just "myslickgithubuser"
+    SiteMeta { siteAuthor = "João Pereira"
+             , baseUrl = "https://joaocpereira.me"
+             , siteTitle = "João's Blog"
+             , twitterHandle = Just "joaopereira_19"
+             , githubUser = Just "jcp19"
              }
 
 outputFolder :: FilePath
@@ -74,12 +74,12 @@ data Post =
     deriving (Generic, Eq, Ord, Show, FromJSON, ToJSON, Binary)
 
 data AtomData =
-  AtomData { title        :: String
-           , domain       :: String
-           , author       :: String
-           , posts        :: [Post]
-           , currentTime  :: String
-           , atomUrl      :: String } deriving (Generic, ToJSON, Eq, Ord, Show)
+  AtomData { title       :: String
+           , domain      :: String
+           , author      :: String
+           , posts       :: [Post]
+           , currentTime :: String
+           , atomUrl     :: String } deriving (Generic, ToJSON, Eq, Ord, Show)
 
 -- | given a list of posts this will build a table of contents
 buildIndex :: [Post] -> Action ()
