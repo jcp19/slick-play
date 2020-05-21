@@ -3,7 +3,7 @@ html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, abbr, acronym, em, 
   border: 0;
   font-weight: inherit;
   font-style: inherit;
-  font-size: 100%;
+  font-size: 103%;
   font-family: inherit;
   vertical-align: baseline;
   margin: 0;
@@ -95,8 +95,6 @@ li {
   margin-bottom: 0.7em;
 }
 
-
-
 em {
   font-weight: bold;
   font-style: italic; }
@@ -105,13 +103,14 @@ img {
   margin: auto; }
 
 a, a:visited, a:hover {
-  color: #EB005B;
+  color: #0099cc;
   text-decoration: none;
   -webkit-transition: color 0.1s;
           transition: color 0.1s; }
   a:hover, a:visited:hover, a:hover:hover {
-    color: #EB0978;
-    text-decoration: underline; }
+    color: #0099cc;
+    opacity: 1;
+    /* text-decoration: underline; */ }
 
 header {
   position: fixed;
@@ -265,7 +264,7 @@ a.tag, a.category {
   .post p + p {
     margin-top: 1em; }
   .post > p:first-of-type:first-letter {
-    font-size: 8em;
+    font-size: 4em;
     line-height: 0.1em;
     padding-right: 0.06em; }
   .post ul {
@@ -464,6 +463,22 @@ a.tag, a.category {
   .dark #theme-button {
     color: #DDD; }
 
+#navbar-button {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Quicksand", helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: right;
+  cursor: pointer;
+  -webkit-transition: opacity 0.5s, color 2s;
+          transition: opacity 0.5s, color 2s;
+  opacity: 0.6; }
+  #navbar-button:hover, #navbar-button:visited:hover, #navbar-button:hover:hover {
+    color: black;
+    text-decoration: underline;
+    opacity: 1; }
+
 #beacon {
   font-family: "Oswald", helvetica, sans-serif;
   font-size: 4em;
@@ -564,5 +579,12 @@ a.tag, a.category {
 .right-sidebar > * {
   margin-left: 12px;
 }
+
+/*
+.sourceCode {
+   font-family:  'Ubuntu Mono', 'Andale Mono', monospace;
+   background-color: #EEEEEE;
+   padding: 0 5px 0 5px;
+} */
 
 /*# sourceMappingURL=style.css.map */

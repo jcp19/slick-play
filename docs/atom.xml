@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>João&#39;s Blog</title>
     <link href="https://joaocpereira.me/atom.xml" rel="self" type="application/rss+xml" />
-  <updated>2020-05-21T14:10:SZ</updated>
+  <updated>2020-05-21T16:05:SZ</updated>
   <author>
       <name>João Pereira</name>
   </author>
@@ -10,12 +10,34 @@
 
   <entry>
       <title>Sample Post</title>
-      <link href="https://joaocpereira.meposts/sample-post.html"/>
-      <id>https://joaocpereira.meposts/sample-post.html</id>
+      <link href="https://joaocpereira.meposts/post2.html"/>
+      <id>https://joaocpereira.meposts/post2.html</id>
       <updated>2019-01-01T00:00:SZ</updated>
+      <category term="test"/>
+      <category term="meta"/>
       <category term="slick"/>
       <category term="site"/>
       <summary>My first blog post using slick</summary>
-      <content type="html"><![CDATA[<p>Welcome to your first blog post!</p>]]></content>
+      <content type="html"><![CDATA[]]></content>
+  </entry>
+  <entry>
+      <title>Sample Post</title>
+      <link href="https://joaocpereira.meposts/sample-post.html"/>
+      <id>https://joaocpereira.meposts/sample-post.html</id>
+      <updated>2019-01-01T00:00:SZ</updated>
+      <category term="test"/>
+      <category term="meta"/>
+      <category term="slick"/>
+      <category term="site"/>
+      <summary>My first blog post using slick</summary>
+      <content type="html"><![CDATA[<p>Welcome to your first blog post!</p>
+<blockquote>
+<p>My first blog post using Haskell and Slick and math stuff</p>
+</blockquote>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">public</span> <span class="kw">class</span> M {</span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="dt">int</span> bla;</span>
+<span id="cb1-3"><a href="#cb1-3"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1"></a>-b <span class="fu">\sqrt</span> <span class="fu">\sum</span></span></code></pre></div>
+<p>$$ \sum_{i=0}^{10} x^{2} + x + \sqrt{100}=10 $$</p>]]></content>
   </entry>
 </feed>
